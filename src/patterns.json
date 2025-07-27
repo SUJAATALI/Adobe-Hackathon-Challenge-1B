@@ -1,0 +1,50 @@
+{
+  "title_patterns": [
+    "^[A-Z][A-Za-z\\s\\-&(),:0-9]{8,120}$",
+    "^[A-Z][a-z]+(?:\\s+[A-Z][a-z]+)*$",
+    "^\\d+[\\.\\)]\\s*[A-Z][A-Za-z\\s\\-&(),:]{5,100}$",
+    "^[A-Z\\s]{3,80}$",
+    "^[A-Z][^.!?]*:$",
+    "^[A-Z][A-Za-z\\s]+[A-Z][A-Za-z\\s]*$"
+  ],
+  "section_indicators": [
+    "guide", "introduction", "overview", "summary", "conclusion",
+    "method", "approach", "process", "procedure", "step",
+    "result", "finding", "outcome", "analysis", "discussion",
+    "tip", "advice", "recommendation", "suggestion", "note",
+    "example", "sample", "case", "instance", "illustration",
+    "checklist", "list", "items", "points", "elements",
+    "chapter", "section", "part", "unit", "module",
+    "background", "context", "setting", "environment",
+    "objective", "goal", "purpose", "aim", "target",
+    "requirement", "specification", "criteria", "standard",
+    "activity", "activities", "things", "do", "attraction",
+    "planning", "preparation", "organize", "arrange",
+    "instruction", "instructions", "how", "tutorial",
+    "information", "details", "explanation", "description",
+    "features", "benefits", "advantages", "options",
+    "considerations", "factors", "aspects", "issues",
+    "timeline", "schedule", "agenda", "itinerary",
+    "resources", "materials", "tools", "equipment",
+    "budget", "cost", "expense", "pricing",
+    "safety", "security", "precaution", "warning",
+    "troubleshooting", "problem", "solution", "fix"
+  ],
+  "exclusion_patterns": [
+    "^[•●\\-\\*]\\s*",
+    "^\\d+\\s*$",
+    "^https?://",
+    "^[^A-Za-z]*$",
+    "^.{1,3}$",
+    "^.{200,}$",
+    "^\\s*$",
+    "^\\d+\\.$",
+    "^[.,;:!?]+$"
+  ],
+  "strong_indicators": [
+    "introduction", "overview", "guide", "summary", "conclusion",
+    "planning", "preparation", "requirements", "activities",
+    "instructions", "procedure", "method", "approach",
+    "recommendations", "tips", "advice", "guidelines"
+  ]
+}

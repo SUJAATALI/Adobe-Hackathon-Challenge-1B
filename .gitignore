@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.env
+venv/
+ENV/
+.env
+.env.*
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data and output
+*.log
+*.out
+*.tmp
+data/challenge1b_output.json
+
+# Docker
+*.container
+*.pid
+
+# Misc
+*.bak
+*.swp
+*.swo
+
+# PDF extraction cache
+src/__pycache__/
+
+# Ignore PDFs in data/docs (if needed)
+data/docs/*.pdf

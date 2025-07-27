@@ -1,0 +1,17 @@
+# Core PDF Processing
+PyMuPDF==1.23.5
+
+# Natural Language Processing
+spacy==3.6.1
+scikit-learn==1.3.0
+numpy==1.24.3
+
+# Information Retrieval
+rank-bm25==0.2.2
+
+# Optional dependencies for enhanced processing
+sentence-transformers==2.2.2
+
+# Development and testing
+pytest==7.4.0
+pytest-cov==4.1.0

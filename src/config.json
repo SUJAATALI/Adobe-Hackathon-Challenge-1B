@@ -1,0 +1,38 @@
+{
+  "pattern_file": "src/patterns.json",
+  "font_size_threshold": 1.15,
+  "enable_font_analysis": true,
+  "min_section_length": 30,
+  "max_title_length": 100,
+  "max_workers": 4,
+  "timeout": 60,
+  "top_n": 10,
+  "max_snippet_length": 400,
+  "ranking": {
+    "max_features": 20000,
+    "ngram_range": [1, 3],
+    "min_df": 1,
+    "max_df": 0.85,
+    "tfidf_weight": 0.30,
+    "bm25_weight": 0.30,
+    "semantic_weight": 0.40
+  },
+  "processing": {
+    "enable_font_analysis": true,
+    "enable_section_classification": true,
+    "enable_metadata_extraction": true,
+    "enable_text_quality_assessment": true,
+    "min_text_quality_score": 0.3
+  },
+  "section_detection": {
+    "font_size_threshold": 1.15,
+    "max_title_length": 80,
+    "min_title_words": 2,
+    "max_title_words": 15
+  },
+  "snippet_extraction": {
+    "min_sentence_length": 10,
+    "prefer_beginning_sentences": true,
+    "add_persona_context": true
+  }
+}
