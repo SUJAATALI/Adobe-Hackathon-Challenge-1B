@@ -69,20 +69,7 @@ docker build -t document-intelligence .
 
 ### 🚀  Run the Processor
 
-Example for **Collection 1**:
-
-```bash
-docker run --rm \
-  -v ${PWD}/Collection\ 1:/app/collection1 \
-  document-intelligence \
-  python src/main.py \
-    --input "collection1/challenge1b_input.json" \
-    --output "collection1/challenge1b_output.json" \
-    --pdf-dir "collection1/pdfs" \
-    --config src/config.json
-```
-
-> 📝 Use `${PWD}` on Unix/macOS or full paths on Windows if needed. Replace `Collection 1` accordingly.
+## Recommended 
 
 ** 🔹 Collection 1 **
 ```bash
@@ -108,6 +95,25 @@ python src/main.py --input "Collection 3/challenge1b_input.json" --output "Colle
 
 
 ---
+
+## docker method
+
+Example for **Collection 1**:
+
+```bash
+docker run --rm \
+  -v ${PWD}/Collection\ 1:/app/collection1 \
+  document-intelligence \
+  python src/main.py \
+    --input "collection1/challenge1b_input.json" \
+    --output "collection1/challenge1b_output.json" \
+    --pdf-dir "collection1/pdfs" \
+    --config src/config.json
+```
+
+> 📝 Use `${PWD}` on Unix/macOS or full paths on Windows if needed. Replace `Collection 1` accordingly.
+
+
 
 ## 📊 Supported Use Cases
 
