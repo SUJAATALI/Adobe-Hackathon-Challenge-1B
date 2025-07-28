@@ -32,7 +32,7 @@ A sophisticated, domain-agnostic document intelligence system that extracts and 
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/SUJAATALI/Adobe-Hackathon-Challenge-1B
    cd Adobe_challenge1B
    ```
 
@@ -56,23 +56,56 @@ A sophisticated, domain-agnostic document intelligence system that extracts and 
    pip install -r requirements.txt
    python -m spacy download en_core_web_md
    ```
+   
+### Run Examples
 
-### Basic Usage
+**Ensure you're in the project root directory when running these commands.**
 
-**Run with default settings**
+### 🛠 Build the Docker Image
+
 ```bash
-python src/main.py --input data/challenge1b_input.json --output data/challenge1b_output.json
+docker build -t document-intelligence .
 ```
 
-**Run with optimized configuration (recommended)**
+### 🚀  Run the Processor
+
+Example for **Collection 1**:
+
 ```bash
-python src/main.py --input data/challenge1b_input.json --output data/challenge1b_output.json --config src/config.json
+docker run --rm \
+  -v ${PWD}/Collection\ 1:/app/collection1 \
+  document-intelligence \
+  python src/main.py \
+    --input "collection1/challenge1b_input.json" \
+    --output "collection1/challenge1b_output.json" \
+    --pdf-dir "collection1/pdfs" \
+    --config src/config.json
 ```
 
-**Run with custom section count**
+> 📝 Use `${PWD}` on Unix/macOS or full paths on Windows if needed. Replace `Collection 1` accordingly.
+
+** 🔹 Collection 1 **
 ```bash
-python src/main.py --input data/challenge1b_input.json --output data/challenge1b_output.json --config src/config.json --top-n 15
+python src/main.py --input "Collection 1/challenge1b_input.json" --output "Collection 1/challenge1b_output.json" --pdf-dir "Collection 1/pdfs" --config src/config.json
+
+
 ```
+
+** 🔹 Collection 2 **
+```bash
+python src/main.py --input "Collection 2/challenge1b_input.json" --output "Collection 2/challenge1b_output.json" --pdf-dir "Collection 2/pdfs" --config src/config.json
+
+
+
+```
+
+** 🔹 Collection 3 **
+```bash
+python src/main.py --input "Collection 3/challenge1b_input.json" --output "Collection 3/challenge1b_output.json" --pdf-dir "Collection 3/pdfs" --config src/config.json
+
+```
+
+
 
 ---
 
